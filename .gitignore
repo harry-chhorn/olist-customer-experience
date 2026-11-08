@@ -1,0 +1,11 @@
+.projectuno/
+
+# [Data]
+data/raw/
+data/processed/
+*.duckdb
+
+# [Files]
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
