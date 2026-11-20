@@ -2,4 +2,6 @@ duckdb
 pandas
 matplotlib
 jupyter
-statesmodels
+jupysql
+duckdb-engine
+statsmodels
