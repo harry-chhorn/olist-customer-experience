@@ -4,8 +4,6 @@ Analysis of about 96,000 orders from Olist, a Brazilian e-commerce marketplace. 
 
 ## Dashboard
 
-[![Olist review dashboard](images/dashboard.png)](https://public.tableau.com/app/profile/chhunheang.chhorn/viz/Olist-Review-Tableau/Main-DB)
-
 [View the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/chhunheang.chhorn/viz/Olist-Review-Tableau/Main-DB)
 
 ## Key findings
