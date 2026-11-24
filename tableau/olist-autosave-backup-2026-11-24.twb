@@ -1,0 +1,2223 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1210.1815                               -->
+<workbook original-version='18.1' source-build='2025.3.1 (20253.25.1210.1815)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <CollapsiblePane />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='tableau_orders' inline='true' name='federated.10jgn8v0zdx99x14nt4pv14agmno' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_orders' name='textscan.1bpq58b18ku6id113gn451sb03aj'>
+            <connection class='textscan' directory='/Users/mac/Projects/olist-customer-experience/data/processed' filename='tableau_orders.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1bpq58b18ku6id113gn451sb03aj' name='tableau_orders.csv' table='[tableau_orders#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+            <column datatype='string' name='order_id' ordinal='0' />
+            <column datatype='string' name='customer_unique_id' ordinal='1' />
+            <column datatype='string' name='customer_state' ordinal='2' />
+            <column datatype='datetime' name='order_purchase_timestamp' ordinal='3' />
+            <column datatype='datetime' name='order_delivered_customer_date' ordinal='4' />
+            <column datatype='datetime' name='order_estimated_delivery_date' ordinal='5' />
+            <column datatype='integer' name='delivery_days' ordinal='6' />
+            <column datatype='integer' name='days_late' ordinal='7' />
+            <column datatype='boolean' name='is_late' ordinal='8' />
+            <column datatype='integer' name='review_score' ordinal='9' />
+            <column datatype='integer' name='n_items' ordinal='10' />
+            <column datatype='real' name='revenue' ordinal='11' />
+            <column datatype='real' name='freight' ordinal='12' />
+            <column datatype='string' name='main_category' ordinal='13' />
+            <column datatype='date' name='purchase_month' ordinal='14' />
+            <column datatype='string' name='delivery_bucket' ordinal='15' />
+            <column datatype='boolean' name='is_bad_review' ordinal='16' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_orders.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¤&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[order_id]</local-name>
+            <parent-name>[tableau_orders.csv]</parent-name>
+            <remote-alias>order_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_unique_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_unique_id]</local-name>
+            <parent-name>[tableau_orders.csv]</parent-name>
+            <remote-alias>customer_unique_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_state]</local-name>
+            <parent-name>[tableau_orders.csv]</parent-name>
+            <remote-alias>customer_state</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_purchase_timestamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[order_purchase_timestamp]</local-name>
+            <parent-name>[tableau_orders.csv]</parent-name>
+            <remote-alias>order_purchase_timestamp</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_delivered_customer_date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[order_delivered_customer_date]</local-name>
+            <parent-name>[tableau_orders.csv]</parent-name>
+            <remote-alias>order_delivered_customer_date</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_estimated_delivery_date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[order_estimated_delivery_date]</local-name>
+            <parent-name>[tableau_orders.csv]</parent-name>
+            <remote-alias>order_estimated_delivery_date</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>delivery_days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[delivery_days]</local-name>
+            <parent-name>[tableau_orders.csv]</parent-name>
+            <remote-alias>delivery_days</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>days_late</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[days_late]</local-name>
+            <parent-name>[tableau_orders.csv]</parent-name>
+            <remote-alias>days_late</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_late</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[is_late]</local-name>
+            <parent-name>[tableau_orders.csv]</parent-name>
+            <remote-alias>is_late</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[review_score]</local-name>
+            <parent-name>[tableau_orders.csv]</parent-name>
+            <remote-alias>review_score</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_items</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n_items]</local-name>
+            <parent-name>[tableau_orders.csv]</parent-name>
+            <remote-alias>n_items</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[revenue]</local-name>
+            <parent-name>[tableau_orders.csv]</parent-name>
+            <remote-alias>revenue</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>freight</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[freight]</local-name>
+            <parent-name>[tableau_orders.csv]</parent-name>
+            <remote-alias>freight</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>main_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[main_category]</local-name>
+            <parent-name>[tableau_orders.csv]</parent-name>
+            <remote-alias>main_category</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>purchase_month</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[purchase_month]</local-name>
+            <parent-name>[tableau_orders.csv]</parent-name>
+            <remote-alias>purchase_month</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>delivery_bucket</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[delivery_bucket]</local-name>
+            <parent-name>[tableau_orders.csv]</parent-name>
+            <remote-alias>delivery_bucket</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_bad_review</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[is_bad_review]</local-name>
+            <parent-name>[tableau_orders.csv]</parent-name>
+            <remote-alias>is_bad_review</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Orders' datatype='integer' name='[Calculation_5459556316000256]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([order_id])' />
+      </column>
+      <column caption='Late Rate' datatype='real' default-format='p0.0%' name='[Calculation_5459556316196865]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG(IIF([days_late] &gt; 0, 1, 0))' />
+      </column>
+      <column caption='Bad Review Rate' datatype='real' default-format='p0.0%' name='[Calculation_5459556320280578]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG(IIF([review_score] &lt;= 2, 1, 0))' />
+      </column>
+      <column caption='Avg Review' datatype='real' name='[Calculation_5459556320530435]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([review_score])' />
+      </column>
+      <column caption='Delivery Status' datatype='string' name='[Calculation_5459556320681988]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IIF([days_late] &gt; 0, &quot;Late&quot;, &quot;On time&quot;)' />
+      </column>
+      <column caption='Late Orders' datatype='integer' name='[Calculation_5459556920053765]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IIF([days_late] &gt; 0, 1, 0))' />
+      </column>
+      <column caption='Promised Days' datatype='integer' name='[Calculation_5459556920438790]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DATEDIFF(&apos;day&apos;, DATE([order_purchase_timestamp]), DATE([order_estimated_delivery_date]))' />
+      </column>
+      <column caption='Delay Group' datatype='string' name='[Calculation_5459556920766471]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [days_late] &lt;= 0 THEN &quot;On time&quot;&#10;ELSEIF [days_late] &lt;= 3 THEN &quot;1–3 days late&quot;&#10;ELSEIF [days_late] &lt;= 7 THEN &quot;4–7 days late&quot;&#10;ELSE &quot;8+ days late&quot;&#10;END' />
+      </column>
+      <column caption='Star' datatype='string' name='[Calculation_5459556935643145]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='STR([review_score]) + &quot;★&quot;' />
+      </column>
+      <column caption='Orders in Group' datatype='integer' name='[Calculation_5459556943040523]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='{ FIXED [Calculation_5459556920766471] : COUNTD([order_id]) }' />
+      </column>
+      <column caption='Row Label' datatype='string' name='[Calculation_5459556943888396]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Calculation_5459556920766471] + CHAR(10) +&#10;(IF [Calculation_5459556943040523] &gt;= 1000&#10; THEN STR(INT([Calculation_5459556943040523] / 1000)) + &quot;,&quot; + RIGHT(&quot;00&quot; + STR([Calculation_5459556943040523] % 1000), 3)&#10; ELSE STR([Calculation_5459556943040523])&#10; END) + &quot; orders&quot;' />
+      </column>
+      <column caption='Pct Label' datatype='real' name='[Calculation_5459556946395149]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Calculation_5459556316000256] / TOTAL([Calculation_5459556316000256]) &gt;= 0.08&#10;THEN [Calculation_5459556316000256] / TOTAL([Calculation_5459556316000256])&#10;END'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Bad Review KPI' datatype='string' name='[Calculation_5459557563846672]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='STR(INT(ROUND(AVG(IIF([days_late] &gt; 0, IIF([review_score] &lt;= 2, 1, 0), NULL)) * 100, 0)))&#10;+ &quot;% vs &quot; +&#10;STR(INT(ROUND(AVG(IIF([days_late] &lt;= 0, IIF([review_score] &lt;= 2, 1, 0), NULL)) * 100, 0)))&#10;+ &quot;%&quot;' />
+      </column>
+      <column caption='tableau_orders.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]' role='measure' type='quantitative' />
+      <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Customer Unique Id' datatype='string' name='[customer_unique_id]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Days Late' datatype='integer' name='[days_late]' role='dimension' type='quantitative' />
+      <column caption='Delivery Bucket' datatype='string' name='[delivery_bucket]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;1. 8+ days early&quot;' value='8+ days early' />
+          <alias key='&quot;2. 1-7 days early&quot;' value='1-7 days early' />
+          <alias key='&quot;3. On the estimated day&quot;' value='On the estimated day' />
+          <alias key='&quot;4. 1-3 days late&quot;' value='1-3 days late' />
+          <alias key='&quot;5. 4-7 days late&quot;' value='4-7 days late' />
+          <alias key='&quot;6. 8-14 days late&quot;' value='8-14 days late' />
+          <alias key='&quot;7. 15+ days late&quot;' value='15+ days late' />
+        </aliases>
+      </column>
+      <column caption='Delivery Days' datatype='integer' name='[delivery_days]' role='measure' type='quantitative' />
+      <column caption='Freight' datatype='real' name='[freight]' role='measure' type='quantitative' />
+      <column caption='Is Bad Review' datatype='boolean' name='[is_bad_review]' role='dimension' type='nominal' />
+      <column caption='Is Late' datatype='boolean' name='[is_late]' role='dimension' type='nominal' />
+      <column caption='Main Category' datatype='string' name='[main_category]' role='dimension' type='nominal' />
+      <column caption='N Items' datatype='integer' name='[n_items]' role='measure' type='quantitative' />
+      <column caption='Order Delivered Customer Date' datatype='datetime' name='[order_delivered_customer_date]' role='dimension' type='ordinal' />
+      <column caption='Order Estimated Delivery Date' datatype='datetime' name='[order_estimated_delivery_date]' role='dimension' type='ordinal' />
+      <column caption='Order Id' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+      <column caption='Order Purchase Timestamp' datatype='datetime' name='[order_purchase_timestamp]' role='dimension' type='ordinal' />
+      <column caption='Purchase Month' datatype='date' name='[purchase_month]' role='dimension' type='ordinal' />
+      <column caption='Revenue' datatype='real' name='[revenue]' role='measure' type='quantitative' />
+      <column caption='Review Score' datatype='integer' name='[review_score]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_5459556320681988]' derivation='None' name='[none:Calculation_5459556320681988:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_5459556935643145]' derivation='None' name='[none:Calculation_5459556935643145:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/lp/93nzx6zn4qq3tmg26cwcn91w0000gn/T/tableau-temp/#TableauTemp_0j5l19v1b6he0h1bvg16b0fdhm9b.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/22/2026 05:24:06 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>order_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tableau_orders.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>95560</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_unique_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_unique_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_unique_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tableau_orders.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>90583</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_state</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tableau_orders.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_purchase_timestamp</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[order_purchase_timestamp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_purchase_timestamp</remote-alias>
+              <ordinal>3</ordinal>
+              <family>tableau_orders.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>95560</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_delivered_customer_date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[order_delivered_customer_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_delivered_customer_date</remote-alias>
+              <ordinal>4</ordinal>
+              <family>tableau_orders.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>95560</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_estimated_delivery_date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[order_estimated_delivery_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_estimated_delivery_date</remote-alias>
+              <ordinal>5</ordinal>
+              <family>tableau_orders.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>988</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>delivery_days</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[delivery_days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>delivery_days</remote-alias>
+              <ordinal>6</ordinal>
+              <family>tableau_orders.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>156</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>days_late</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[days_late]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>days_late</remote-alias>
+              <ordinal>7</ordinal>
+              <family>tableau_orders.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>188</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_late</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[is_late]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_late</remote-alias>
+              <ordinal>8</ordinal>
+              <family>tableau_orders.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>review_score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[review_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>review_score</remote-alias>
+              <ordinal>9</ordinal>
+              <family>tableau_orders.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>n_items</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[n_items]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>n_items</remote-alias>
+              <ordinal>10</ordinal>
+              <family>tableau_orders.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>revenue</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>revenue</remote-alias>
+              <ordinal>11</ordinal>
+              <family>tableau_orders.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3789</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>freight</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[freight]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>freight</remote-alias>
+              <ordinal>12</ordinal>
+              <family>tableau_orders.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7498</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>main_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[main_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>main_category</remote-alias>
+              <ordinal>13</ordinal>
+              <family>tableau_orders.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>109</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>purchase_month</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[purchase_month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>purchase_month</remote-alias>
+              <ordinal>14</ordinal>
+              <family>tableau_orders.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>delivery_bucket</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[delivery_bucket]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>delivery_bucket</remote-alias>
+              <ordinal>15</ordinal>
+              <family>tableau_orders.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_bad_review</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[is_bad_review]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_bad_review</remote-alias>
+              <ordinal>16</ordinal>
+              <family>tableau_orders.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_5459556320681988:nk]' palette='cyclic_10_0' type='palette'>
+            <map to='#4f7cba'>
+              <bucket>&quot;On time&quot;</bucket>
+            </map>
+            <map to='#eb364a'>
+              <bucket>&quot;Late&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_5459556935643145:nk]' palette='tableau-20' type='palette'>
+            <map to='#256abf'>
+              <bucket>&quot;5★&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;1✮&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;5✮&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;4✮&quot;</bucket>
+            </map>
+            <map to='#86b6ef'>
+              <bucket>&quot;4★&quot;</bucket>
+            </map>
+            <map to='#d9d8d2'>
+              <bucket>&quot;3★&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;3✮&quot;</bucket>
+            </map>
+            <map to='#e34948'>
+              <bucket>&quot;1★&quot;</bucket>
+            </map>
+            <map to='#f19c9b'>
+              <bucket>&quot;2★&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2✮&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brazil&quot;' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='tableau_orders.csv' id='tableau_orders.csv_7282B446FD8743B5AFE88ED2C33A44F0'>
+            <properties context=''>
+              <relation connection='textscan.1bpq58b18ku6id113gn451sb03aj' name='tableau_orders.csv' table='[tableau_orders#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+                  <column datatype='string' name='order_id' ordinal='0' />
+                  <column datatype='string' name='customer_unique_id' ordinal='1' />
+                  <column datatype='string' name='customer_state' ordinal='2' />
+                  <column datatype='datetime' name='order_purchase_timestamp' ordinal='3' />
+                  <column datatype='datetime' name='order_delivered_customer_date' ordinal='4' />
+                  <column datatype='datetime' name='order_estimated_delivery_date' ordinal='5' />
+                  <column datatype='integer' name='delivery_days' ordinal='6' />
+                  <column datatype='integer' name='days_late' ordinal='7' />
+                  <column datatype='boolean' name='is_late' ordinal='8' />
+                  <column datatype='integer' name='review_score' ordinal='9' />
+                  <column datatype='integer' name='n_items' ordinal='10' />
+                  <column datatype='real' name='revenue' ordinal='11' />
+                  <column datatype='real' name='freight' ordinal='12' />
+                  <column datatype='string' name='main_category' ordinal='13' />
+                  <column datatype='date' name='purchase_month' ordinal='14' />
+                  <column datatype='string' name='delivery_bucket' ordinal='15' />
+                  <column datatype='boolean' name='is_bad_review' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_63E780E501674862BA8F7823E7FE5792]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Star_bar' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Star' />
+        <param name='target' value='Star_bar' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Arr'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Arriving Early Barely Helps, Arriving Late Hurt From Day 1</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#898989' fontsize='12'>Average reviews score by days between estimated and actual delivery date</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_orders' name='federated.10jgn8v0zdx99x14nt4pv14agmno' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10jgn8v0zdx99x14nt4pv14agmno'>
+            <column caption='Orders' datatype='integer' name='[Calculation_5459556316000256]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([order_id])' />
+            </column>
+            <column caption='Bad Review Rate' datatype='real' default-format='p0.0%' name='[Calculation_5459556320280578]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG(IIF([review_score] &lt;= 2, 1, 0))' />
+            </column>
+            <column caption='Avg Review' datatype='real' name='[Calculation_5459556320530435]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([review_score])' />
+            </column>
+            <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column aggregation='Sum' caption='Days Late' datatype='integer' name='[days_late]' role='dimension' type='quantitative' />
+            <column caption='Main Category' datatype='string' name='[main_category]' role='dimension' type='nominal' />
+            <column-instance column='[customer_state]' derivation='None' name='[none:customer_state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[days_late]' derivation='None' name='[none:days_late:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[main_category]' derivation='None' name='[none:main_category:nk]' pivot='key' type='nominal' />
+            <column caption='Order Id' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+            <column caption='Purchase Month' datatype='date' name='[purchase_month]' role='dimension' type='ordinal' />
+            <column caption='Review Score' datatype='integer' name='[review_score]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_5459556316000256]' derivation='User' name='[usr:Calculation_5459556316000256:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5459556320280578]' derivation='User' name='[usr:Calculation_5459556320280578:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5459556320530435]' derivation='User' name='[usr:Calculation_5459556320530435:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[purchase_month]' derivation='Year' name='[yr:purchase_month:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:customer_state:nk]'>
+            <groupfilter function='level-members' level='[none:customer_state:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:days_late:qk]' included-values='in-range'>
+            <min>-12</min>
+            <max>12</max>
+          </filter>
+          <filter class='categorical' column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:main_category:nk]'>
+            <groupfilter function='level-members' level='[none:main_category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[yr:purchase_month:ok]'>
+            <groupfilter function='level-members' level='[yr:purchase_month:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10jgn8v0zdx99x14nt4pv14agmno].[yr:purchase_month:ok]</column>
+            <column>[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:days_late:qk]</column>
+            <column>[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:customer_state:nk]</column>
+            <column>[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:main_category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]' field-type='quantitative' major-origin='0.0' major-spacing='1.0' max='5.0' min='1.0' minor-origin='0.0' minor-show='false' minor-spacing='0.10000000000000001' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:days_late:qk]' scope='cols' value='Days Late ( Negative = Arrived early )' />
+            <encoding attr='space' class='0' field='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:days_late:qk]' field-type='quantitative' major-origin='0' major-spacing='3' max='12' min='-12' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]' value='c#,##0.00;(#,##0.00)' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='fill-color' id='refline0' value='#f0e2e7' />
+            <format attr='line-pattern-only' id='refline0' value='solid' />
+            <format attr='stroke-size' id='refline0' value='0' />
+            <format attr='line-visibility' id='refline0' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='fill-color' id='annotation_2' value='#00000000' />
+            <format attr='border-width' id='annotation_3' value='0' />
+            <format attr='body-type' id='annotation_3' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='body-type' value='none' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.10jgn8v0zdx99x14nt4pv14agmno].[yr:purchase_month:ok]' value='Year '>
+              <formatted-text>
+                <run>Year </run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:customer_state:nk]' value='State'>
+              <formatted-text>
+                <run>State</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:main_category:nk]' value='Category'>
+              <formatted-text>
+                <run>Category</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <tooltip column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316000256:qk]' />
+              <tooltip column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320280578:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:days_late:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='none' paired-id='refline1' scope='per-table' symmetric='false' value='1' value-column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:days_late:qk]' z-order='1' />
+            <reference-line axis-column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:days_late:qk]' enable-instant-analytics='true' formula='constant' id='refline1' label-type='none' paired-id='refline0' scope='per-table' symmetric='false' value='12' value-column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:days_late:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#2a78d6' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]</rows>
+        <cols>[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:days_late:qk]</cols>
+        <annotations>
+          <annotation class='point' id='2' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true'>On Time</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>Avg Review: </run>
+              <run bold='true'><![CDATA[<[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]> ★]]></run>
+              <run>Æ&#10;&#10;&#10;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:days_late:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:days_late:qk]</field>
+                      <field>[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>0</value>
+                    <value>4.0335937499999996</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='8' y='-89' />
+          </annotation>
+          <annotation class='point' id='3' mark-position='1' pullback='0' text-width='207'>
+            <formatted-text>
+              <run fontcolor='#1b1b1b'>Arrive 10 days early </run>
+              <run bold='true' fontcolor='#1b1b1b'><![CDATA[<[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]> ]]></run>
+              <run fontcolor='#000000' fontname='Benton Sans Book'>★</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#1b1b1b'>scores almost the same as On Time delivery</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='-9.9624489795918372'>
+                  <node-reference>
+                    <axis>[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:days_late:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='4.3387978142076502'>
+                  <node-reference>
+                    <axis>[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='141' y='117' />
+          </annotation>
+          <annotation class='point' id='5' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#000000' fontname='Tableau Light'>3 days late</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Tableau Light'>average review falls to</run>
+              <run fontcolor='#000000'><![CDATA[ <[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]>]]></run>
+              <run bold='true'>Æ </run>
+              <run fontcolor='#000000' fontname='Benton Sans Book'>★</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='2.9485714285714302'>
+                  <node-reference>
+                    <axis>[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:days_late:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='2.6755994358251058'>
+                  <node-reference>
+                    <axis>[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='99' y='-83' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{9AC2E179-DAE6-4A0C-BA43-0411CEA89CF1}' />
+    </worksheet>
+    <worksheet name='KPI'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>KPI</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_orders' name='federated.10jgn8v0zdx99x14nt4pv14agmno' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10jgn8v0zdx99x14nt4pv14agmno'>
+            <column caption='Orders' datatype='integer' name='[Calculation_5459556316000256]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([order_id])' />
+            </column>
+            <column caption='Late Rate' datatype='real' default-format='p0.0%' name='[Calculation_5459556316196865]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG(IIF([days_late] &gt; 0, 1, 0))' />
+            </column>
+            <column caption='Bad Review Rate' datatype='real' default-format='p0.0%' name='[Calculation_5459556320280578]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG(IIF([review_score] &lt;= 2, 1, 0))' />
+            </column>
+            <column caption='Avg Review' datatype='real' name='[Calculation_5459556320530435]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([review_score])' />
+            </column>
+            <column aggregation='Sum' caption='Days Late' datatype='integer' name='[days_late]' role='dimension' type='quantitative' />
+            <column caption='Order Id' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+            <column caption='Revenue' datatype='real' name='[revenue]' role='measure' type='quantitative' />
+            <column caption='Review Score' datatype='integer' name='[review_score]' role='measure' type='quantitative' />
+            <column-instance column='[revenue]' derivation='Sum' name='[sum:revenue:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[review_score]' derivation='Sum' name='[sum:review_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5459556316000256]' derivation='User' name='[usr:Calculation_5459556316000256:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5459556316196865]' derivation='User' name='[usr:Calculation_5459556316196865:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5459556320280578]' derivation='User' name='[usr:Calculation_5459556320280578:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5459556320530435]' derivation='User' name='[usr:Calculation_5459556320530435:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316000256:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.10jgn8v0zdx99x14nt4pv14agmno].[sum:revenue:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316196865:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320280578:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316000256:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10jgn8v0zdx99x14nt4pv14agmno].[sum:revenue:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316196865:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320280578:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10jgn8v0zdx99x14nt4pv14agmno].[sum:review_score:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.10jgn8v0zdx99x14nt4pv14agmno].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.10jgn8v0zdx99x14nt4pv14agmno].[:Measure Names]' value='104' />
+            <format attr='height' value='70' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='2.5082871913909912' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.10jgn8v0zdx99x14nt4pv14agmno].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{3D79A56F-B808-423A-ADC4-50522DAA3BFE}' />
+    </worksheet>
+    <worksheet name='KPI-avg-reviews'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_orders' name='federated.10jgn8v0zdx99x14nt4pv14agmno' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10jgn8v0zdx99x14nt4pv14agmno'>
+            <column caption='Avg Review' datatype='real' name='[Calculation_5459556320530435]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([review_score])' />
+            </column>
+            <column caption='Review Score' datatype='integer' name='[review_score]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_5459556320530435]' derivation='User' name='[usr:Calculation_5459556320530435:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#555555' fontsize='10'>Average review</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#333333' fontname='Tableau Semibold' fontsize='28'><![CDATA[<[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#898989'>out of 5</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DBED4478-868F-4111-AD9B-59A38C6EEE6C}' />
+    </worksheet>
+    <worksheet name='KPI-bad-review'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_orders' name='federated.10jgn8v0zdx99x14nt4pv14agmno' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10jgn8v0zdx99x14nt4pv14agmno'>
+            <column caption='Bad Review KPI' datatype='string' name='[Calculation_5459557563846672]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='STR(INT(ROUND(AVG(IIF([days_late] &gt; 0, IIF([review_score] &lt;= 2, 1, 0), NULL)) * 100, 0)))&#10;+ &quot;% vs &quot; +&#10;STR(INT(ROUND(AVG(IIF([days_late] &lt;= 0, IIF([review_score] &lt;= 2, 1, 0), NULL)) * 100, 0)))&#10;+ &quot;%&quot;' />
+            </column>
+            <column aggregation='Sum' caption='Days Late' datatype='integer' name='[days_late]' role='dimension' type='quantitative' />
+            <column caption='Review Score' datatype='integer' name='[review_score]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_5459557563846672]' derivation='User' name='[usr:Calculation_5459557563846672:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='202' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459557563846672:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#666666' fontsize='10'>Bad reviews ( 1-2 ★)</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#c9372c' fontname='Tableau Semibold' fontsize='28'><![CDATA[<[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459557563846672:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#898989'>late vs on-time orders</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C1D6D747-1BB0-44F0-9069-345AB1CF26A9}' />
+    </worksheet>
+    <worksheet name='KPI-late-rate'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_orders' name='federated.10jgn8v0zdx99x14nt4pv14agmno' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10jgn8v0zdx99x14nt4pv14agmno'>
+            <column caption='Late Rate' datatype='real' default-format='p0.0%' name='[Calculation_5459556316196865]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG(IIF([days_late] &gt; 0, 1, 0))' />
+            </column>
+            <column aggregation='Sum' caption='Days Late' datatype='integer' name='[days_late]' role='dimension' type='quantitative' />
+            <column-instance column='[Calculation_5459556316196865]' derivation='User' name='[usr:Calculation_5459556316196865:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316196865:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#555555' fontsize='10'>Delivered late</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#333333' fontname='Tableau Semibold' fontsize='28'><![CDATA[<[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316196865:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#898989'>after the estimated date</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{838BFFCD-CDA5-45CB-A585-8586232FD7C3}' />
+    </worksheet>
+    <worksheet name='KPI-order'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_orders' name='federated.10jgn8v0zdx99x14nt4pv14agmno' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10jgn8v0zdx99x14nt4pv14agmno'>
+            <column caption='Orders' datatype='integer' name='[Calculation_5459556316000256]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([order_id])' />
+            </column>
+            <column caption='Order Id' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_5459556316000256]' derivation='User' name='[usr:Calculation_5459556316000256:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316000256:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0' fontcolor='#666666' fontsize='10'>Orders</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run fontalignment='0' fontcolor='#333333' fontname='Tableau Semibold' fontsize='28'><![CDATA[<[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316000256:qk]>]]></run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run fontalignment='0' fontcolor='#898989'>delivered &amp; reviewed</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D33D92EA-0AC3-488D-895D-194673744A51}' />
+    </worksheet>
+    <worksheet name='KPI-revenue'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_orders' name='federated.10jgn8v0zdx99x14nt4pv14agmno' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10jgn8v0zdx99x14nt4pv14agmno'>
+            <column caption='Revenue' datatype='real' name='[revenue]' role='measure' type='quantitative' />
+            <column-instance column='[revenue]' derivation='Sum' name='[sum:revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.10jgn8v0zdx99x14nt4pv14agmno].[sum:revenue:qk]' value='c&quot;R$ &quot;#,##0,,.0M;-&quot;R$ &quot;#,##0,,.0M' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[sum:revenue:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#666666' fontsize='10'>Revenue</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#333333' fontname='Tableau Semibold' fontsize='28'><![CDATA[<[federated.10jgn8v0zdx99x14nt4pv14agmno].[sum:revenue:qk]> ]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#898989'>product sales</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{82E44D9E-5F08-49EB-A527-ABC6AA7C99CB}' />
+    </worksheet>
+    <worksheet name='Late Rate by State'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_orders' name='federated.10jgn8v0zdx99x14nt4pv14agmno' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.10jgn8v0zdx99x14nt4pv14agmno'>
+            <column caption='Orders' datatype='integer' name='[Calculation_5459556316000256]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([order_id])' />
+            </column>
+            <column caption='Late Rate' datatype='real' default-format='p0.0%' name='[Calculation_5459556316196865]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG(IIF([days_late] &gt; 0, 1, 0))' />
+            </column>
+            <column caption='Avg Review' datatype='real' name='[Calculation_5459556320530435]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([review_score])' />
+            </column>
+            <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column aggregation='Sum' caption='Days Late' datatype='integer' name='[days_late]' role='dimension' type='quantitative' />
+            <column-instance column='[customer_state]' derivation='None' name='[none:customer_state:nk]' pivot='key' type='nominal' />
+            <column caption='Order Id' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+            <column caption='Review Score' datatype='integer' name='[review_score]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_5459556316000256]' derivation='User' name='[usr:Calculation_5459556316000256:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5459556316196865]' derivation='User' name='[usr:Calculation_5459556316196865:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5459556320530435]' derivation='User' name='[usr:Calculation_5459556320530435:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316196865:qk]' palette='orange_blue_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316196865:qk]' />
+              <tooltip column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316000256:qk]' />
+              <tooltip column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]' />
+              <text column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:customer_state:nk]' />
+              <geometry column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10jgn8v0zdx99x14nt4pv14agmno].[Latitude (generated)]</rows>
+        <cols>[federated.10jgn8v0zdx99x14nt4pv14agmno].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{2F7779C1-1B0A-4C78-AB58-01C05FBD9222}' />
+    </worksheet>
+    <worksheet name='Review by delivery timing'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_orders' name='federated.10jgn8v0zdx99x14nt4pv14agmno' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10jgn8v0zdx99x14nt4pv14agmno'>
+            <column caption='Orders' datatype='integer' name='[Calculation_5459556316000256]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([order_id])' />
+            </column>
+            <column caption='Avg Review' datatype='real' name='[Calculation_5459556320530435]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([review_score])' />
+            </column>
+            <column caption='Delivery Status' datatype='string' name='[Calculation_5459556320681988]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IIF([days_late] &gt; 0, &quot;Late&quot;, &quot;On time&quot;)' />
+            </column>
+            <column aggregation='Sum' caption='Days Late' datatype='integer' name='[days_late]' role='dimension' type='quantitative' />
+            <column caption='Delivery Bucket' datatype='string' name='[delivery_bucket]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;1. 8+ days early&quot;' value='8+ days early' />
+                <alias key='&quot;2. 1-7 days early&quot;' value='1-7 days early' />
+                <alias key='&quot;3. On the estimated day&quot;' value='On the estimated day' />
+                <alias key='&quot;4. 1-3 days late&quot;' value='1-3 days late' />
+                <alias key='&quot;5. 4-7 days late&quot;' value='4-7 days late' />
+                <alias key='&quot;6. 8-14 days late&quot;' value='8-14 days late' />
+                <alias key='&quot;7. 15+ days late&quot;' value='15+ days late' />
+              </aliases>
+            </column>
+            <column-instance column='[Calculation_5459556320681988]' derivation='None' name='[none:Calculation_5459556320681988:nk]' pivot='key' type='nominal' />
+            <column-instance column='[delivery_bucket]' derivation='None' name='[none:delivery_bucket:nk]' pivot='key' type='nominal' />
+            <column caption='Order Id' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+            <column caption='Review Score' datatype='integer' name='[review_score]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_5459556316000256]' derivation='User' name='[usr:Calculation_5459556316000256:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5459556320530435]' derivation='User' name='[usr:Calculation_5459556320530435:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:delivery_bucket:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:delivery_bucket:nk]' value='92' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:Calculation_5459556320681988:nk]' />
+              <text column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]' />
+              <text column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316000256:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]</rows>
+        <cols>[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:delivery_bucket:nk]</cols>
+      </table>
+      <simple-id uuid='{AEE1FF2D-FB15-4291-9E2F-E38E0D500CDE}' />
+    </worksheet>
+    <worksheet name='Star_bar'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>           The later the order arrive, the more customers jump straight to one star</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#898989' fontsize='12'>              Share of review at each star rating</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_orders' name='federated.10jgn8v0zdx99x14nt4pv14agmno' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10jgn8v0zdx99x14nt4pv14agmno'>
+            <column caption='Orders' datatype='integer' name='[Calculation_5459556316000256]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([order_id])' />
+            </column>
+            <column caption='Delay Group' datatype='string' name='[Calculation_5459556920766471]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [days_late] &lt;= 0 THEN &quot;On time&quot;&#10;ELSEIF [days_late] &lt;= 3 THEN &quot;1–3 days late&quot;&#10;ELSEIF [days_late] &lt;= 7 THEN &quot;4–7 days late&quot;&#10;ELSE &quot;8+ days late&quot;&#10;END' />
+            </column>
+            <column caption='Star' datatype='string' name='[Calculation_5459556935643145]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR([review_score]) + &quot;★&quot;' />
+            </column>
+            <column caption='Orders in Group' datatype='integer' name='[Calculation_5459556943040523]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='{ FIXED [Calculation_5459556920766471] : COUNTD([order_id]) }' />
+            </column>
+            <column caption='Row Label' datatype='string' name='[Calculation_5459556943888396]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Calculation_5459556920766471] + CHAR(10) +&#10;(IF [Calculation_5459556943040523] &gt;= 1000&#10; THEN STR(INT([Calculation_5459556943040523] / 1000)) + &quot;,&quot; + RIGHT(&quot;00&quot; + STR([Calculation_5459556943040523] % 1000), 3)&#10; ELSE STR([Calculation_5459556943040523])&#10; END) + &quot; orders&quot;' />
+            </column>
+            <column caption='Pct Label' datatype='real' name='[Calculation_5459556946395149]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Calculation_5459556316000256] / TOTAL([Calculation_5459556316000256]) &gt;= 0.08&#10;THEN [Calculation_5459556316000256] / TOTAL([Calculation_5459556316000256])&#10;END'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column aggregation='Sum' caption='Days Late' datatype='integer' name='[days_late]' role='dimension' type='quantitative' />
+            <column-instance column='[Calculation_5459556935643145]' derivation='None' name='[none:Calculation_5459556935643145:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_5459556943888396]' derivation='None' name='[none:Calculation_5459556943888396:nk]' pivot='key' type='nominal' />
+            <column caption='Order Id' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_5459556316000256]' derivation='User' name='[pcto:usr:Calculation_5459556316000256:qk:3]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:Calculation_5459556935643145:nk]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+            <column caption='Review Score' datatype='integer' name='[review_score]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_5459556946395149]' derivation='User' name='[usr:Calculation_5459556946395149:qk:3]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:Calculation_5459556935643145:nk]' ordering-type='Field' />
+            </column-instance>
+          </datasource-dependencies>
+          <manual-sort column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:Calculation_5459556935643145:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;5★&quot;</bucket>
+              <bucket>&quot;4★&quot;</bucket>
+              <bucket>&quot;3★&quot;</bucket>
+              <bucket>&quot;2★&quot;</bucket>
+              <bucket>&quot;1★&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <manual-sort column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:Calculation_5459556943888396:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;On time&#10;89,182 orders&quot;</bucket>
+              <bucket>&quot;1–3 days late&#10;1,851 orders&quot;</bucket>
+              <bucket>&quot;4–7 days late&#10;1,748 orders&quot;</bucket>
+              <bucket>&quot;8+ days late&#10;2,779 orders&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.10jgn8v0zdx99x14nt4pv14agmno].[pcto:usr:Calculation_5459556316000256:qk:3]' field-type='quantitative' major-origin='0.0' major-spacing='0.25' max='1.0' min='0.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.10jgn8v0zdx99x14nt4pv14agmno].[pcto:usr:Calculation_5459556316000256:qk:3]' scope='cols' value='' />
+            <format attr='stroke-color' scope='cols' value='#898989' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.10jgn8v0zdx99x14nt4pv14agmno].[pcto:usr:Calculation_5459556316000256:qk:3]' value='p0%' />
+            <format attr='text-format' field='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556946395149:qk:3]' value='p0%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.10jgn8v0zdx99x14nt4pv14agmno].[pcto:usr:Calculation_5459556316000256:qk:3]' value='p0%' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:Calculation_5459556935643145:nk]' />
+              <text column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556946395149:qk:3]' />
+              <lod column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[pcto:usr:Calculation_5459556316000256:qk:3]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Tableau Semibold' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.65867406129837036' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:Calculation_5459556943888396:nk]</rows>
+        <cols>[federated.10jgn8v0zdx99x14nt4pv14agmno].[pcto:usr:Calculation_5459556316000256:qk:3]</cols>
+      </table>
+      <simple-id uuid='{350E4C34-F20D-4DBF-99BA-343665353169}' />
+    </worksheet>
+    <worksheet name='Worst-reviewed Categorie'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_orders' name='federated.10jgn8v0zdx99x14nt4pv14agmno' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10jgn8v0zdx99x14nt4pv14agmno'>
+            <column caption='Orders' datatype='integer' name='[Calculation_5459556316000256]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([order_id])' />
+            </column>
+            <column caption='Late Rate' datatype='real' default-format='p0.0%' name='[Calculation_5459556316196865]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG(IIF([days_late] &gt; 0, 1, 0))' />
+            </column>
+            <column caption='Avg Review' datatype='real' name='[Calculation_5459556320530435]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([review_score])' />
+            </column>
+            <column aggregation='Sum' caption='Days Late' datatype='integer' name='[days_late]' role='dimension' type='quantitative' />
+            <column caption='Main Category' datatype='string' name='[main_category]' role='dimension' type='nominal' />
+            <column-instance column='[main_category]' derivation='None' name='[none:main_category:nk]' pivot='key' type='nominal' />
+            <column caption='Order Id' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+            <column caption='Review Score' datatype='integer' name='[review_score]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_5459556316000256]' derivation='User' name='[usr:Calculation_5459556316000256:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5459556316196865]' derivation='User' name='[usr:Calculation_5459556316196865:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5459556320530435]' derivation='User' name='[usr:Calculation_5459556320530435:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:main_category:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:main_category:nk]' member='&quot;audio&quot;' />
+              <groupfilter function='member' level='[none:main_category:nk]' member='&quot;baby&quot;' />
+              <groupfilter function='member' level='[none:main_category:nk]' member='&quot;bed_bath_table&quot;' />
+              <groupfilter function='member' level='[none:main_category:nk]' member='&quot;computers_accessories&quot;' />
+              <groupfilter function='member' level='[none:main_category:nk]' member='&quot;furniture_decor&quot;' />
+              <groupfilter function='member' level='[none:main_category:nk]' member='&quot;furniture_living_room&quot;' />
+              <groupfilter function='member' level='[none:main_category:nk]' member='&quot;home_confort&quot;' />
+              <groupfilter function='member' level='[none:main_category:nk]' member='&quot;home_construction&quot;' />
+              <groupfilter function='member' level='[none:main_category:nk]' member='&quot;office_furniture&quot;' />
+              <groupfilter function='member' level='[none:main_category:nk]' member='&quot;telephony&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316000256:qk]' included-values='in-range'>
+            <min>300</min>
+            <max>9106</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:main_category:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316000256:qk]</column>
+            <column>[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:main_category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316196865:qk]' />
+              <tooltip column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316000256:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:main_category:nk]</rows>
+        <cols>[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]</cols>
+      </table>
+      <simple-id uuid='{95BEAD70-55C7-44E0-9502-52AF33B41E79}' />
+    </worksheet>
+    <worksheet name='Worst-reviewed Categorie (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_orders' name='federated.10jgn8v0zdx99x14nt4pv14agmno' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10jgn8v0zdx99x14nt4pv14agmno'>
+            <column caption='Orders' datatype='integer' name='[Calculation_5459556316000256]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([order_id])' />
+            </column>
+            <column caption='Avg Review' datatype='real' name='[Calculation_5459556320530435]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([review_score])' />
+            </column>
+            <column caption='Main Category' datatype='string' name='[main_category]' role='dimension' type='nominal' />
+            <column-instance column='[main_category]' derivation='None' name='[none:main_category:nk]' pivot='key' type='nominal' />
+            <column caption='Order Id' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+            <column caption='Review Score' datatype='integer' name='[review_score]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_5459556316000256]' derivation='User' name='[usr:Calculation_5459556316000256:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5459556320530435]' derivation='User' name='[usr:Calculation_5459556320530435:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:main_category:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:main_category:nk]' member='&quot;audio&quot;' />
+              <groupfilter function='member' level='[none:main_category:nk]' member='&quot;baby&quot;' />
+              <groupfilter function='member' level='[none:main_category:nk]' member='&quot;bed_bath_table&quot;' />
+              <groupfilter function='member' level='[none:main_category:nk]' member='&quot;computers_accessories&quot;' />
+              <groupfilter function='member' level='[none:main_category:nk]' member='&quot;furniture_decor&quot;' />
+              <groupfilter function='member' level='[none:main_category:nk]' member='&quot;furniture_living_room&quot;' />
+              <groupfilter function='member' level='[none:main_category:nk]' member='&quot;home_confort&quot;' />
+              <groupfilter function='member' level='[none:main_category:nk]' member='&quot;home_construction&quot;' />
+              <groupfilter function='member' level='[none:main_category:nk]' member='&quot;office_furniture&quot;' />
+              <groupfilter function='member' level='[none:main_category:nk]' member='&quot;telephony&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316000256:qk]' included-values='in-range'>
+            <min>300</min>
+            <max>9106</max>
+          </filter>
+          <slices>
+            <column>[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316000256:qk]</column>
+            <column>[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:main_category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]' palette='blue_teal_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]' />
+              <size column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316000256:qk]' />
+              <text column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:main_category:nk]' />
+              <text column='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7667D5EC-F66D-4C30-86C3-AF11ADE011C6}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Main-DB'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#d4d4d484' />
+        </style-rule>
+        <style-rule element='dash-text'>
+          <format attr='text-align' id='dash-text_16' value='left' />
+          <format attr='wrap' id='dash-text_16' value='off' />
+          <format attr='vertical-align' id='dash-text_16' value='top' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1200' minheight='800' minwidth='1200' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='22' param='horz' type-v2='layout-flow' w='98666' x='667' y='1000'>
+            <zone h='98000' id='20' param='horz' type-v2='layout-flow' w='98666' x='667' y='1000'>
+              <zone h='98000' id='18' type-v2='layout-basic' w='98666' x='667' y='1000'>
+                <zone h='74000' id='11' param='vert' type-v2='layout-flow' w='98666' x='667' y='25000'>
+                  <zone h='74000' id='9' param='horz' type-v2='layout-flow' w='98666' x='667' y='25000'>
+                    <zone h='74000' id='12' type-v2='layout-basic' w='98666' x='667' y='25000'>
+                      <zone h='74000' id='13' param='vert' type-v2='layout-flow' w='98666' x='667' y='25000'>
+                        <zone h='74000' id='14' param='vert' type-v2='layout-flow' w='98666' x='667' y='25000'>
+                          <zone h='68000' id='17' name='Arr' w='94666' x='2667' y='28000'>
+                            <layout-cache minheight='221' type-h='scalable' type-w='fixed' />
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='24' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+                <zone h='8000' id='15' param='horz' type-v2='layout-flow' w='98666' x='667' y='1000'>
+                  <zone forceUpdate='true' h='8000' id='16' type-v2='text' w='98666' x='667' y='1000'>
+                    <formatted-text>
+                      <run fontcolor='#333333' fontname='Tableau Bold' fontsize='18'>Late deliveries get 7 x more bad reviews, and the damange starts on day 1</run>
+                      <run>Æ&#10;</run>
+                      <run fontsize='11'>Olist marketplace - reviewed orders - Date: Jan 2017 - Aug 2018</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='16000' id='28' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98666' x='667' y='9000'>
+                  <zone h='16000' id='29' name='KPI-order' w='19750' x='667' y='9000'>
+                    <layout-cache fixed-size-h='101' type-h='fixed' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='16000' id='30' name='KPI-revenue' w='19750' x='20417' y='9000'>
+                    <layout-cache type-h='fixed' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='16000' id='31' name='KPI-avg-reviews' w='19750' x='40167' y='9000'>
+                    <layout-cache type-h='fixed' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='16000' id='32' name='KPI-late-rate' w='19750' x='59917' y='9000'>
+                    <layout-cache type-h='fixed' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='16000' id='33' name='KPI-bad-review' w='19666' x='79667' y='9000'>
+                    <layout-cache type-h='fixed' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='3000' id='27' type-v2='dashboard-object' w='2000' x='99333' y='1000'>
+          <button action=''>
+            <toggle-action>tabdoc:toggle-button-click-action window-id=&quot;{E527F915-DA14-4C1E-8559-0E6DDBAE9527}&quot; zone-id=&quot;27&quot; zone-ids=[26]</toggle-action>
+            <button-visual-state />
+            <button-visual-state />
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{AAF70C4B-B048-4767-9287-1E4BBEEEFBDB}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B04B93F2-48C0-4876-AE2B-A95BAF6736EF}' />
+    </window>
+    <window class='worksheet' name='Review by delivery timing'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:Calculation_5459556320681988:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D31F745A-9036-4E5B-904D-D0D98C299BA1}' />
+    </window>
+    <window class='worksheet' name='Late Rate by State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316196865:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4024053D-4770-484C-BFF3-2DA7001C2A95}' />
+    </window>
+    <window class='worksheet' name='Worst-reviewed Categorie'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556316196865:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0BBDEB99-7884-4697-8235-416671F36F21}' />
+    </window>
+    <window class='worksheet' name='Worst-reviewed Categorie (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.10jgn8v0zdx99x14nt4pv14agmno].[usr:Calculation_5459556320530435:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DED5CB50-1D8C-4EAA-97B1-D175CA5527F6}' />
+    </window>
+    <window class='worksheet' name='Arr'>
+      <cards>
+        <edge name='left'>
+          <strip size='190'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{7E4E3897-1956-43F4-9CAA-1097B2DDBBE6}' />
+    </window>
+    <window class='worksheet' name='Star_bar'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.10jgn8v0zdx99x14nt4pv14agmno].[none:Calculation_5459556935643145:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+      </viewpoint>
+      <simple-id uuid='{29D17FBB-9691-4ACE-8FF6-5A88BBBD7A06}' />
+    </window>
+    <window class='worksheet' name='KPI-order'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5A8CF4DD-628D-4FB1-8823-1FC577765308}' />
+    </window>
+    <window class='worksheet' name='KPI-revenue'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D78D41EF-66C2-49FE-B36C-428E25D038DA}' />
+    </window>
+    <window class='worksheet' name='KPI-late-rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CD7DB28E-A797-4712-A91C-AFF3E61276A5}' />
+    </window>
+    <window class='worksheet' name='KPI-avg-reviews'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C1DB5DFB-88B4-4AFD-BF22-D8C64CC27E70}' />
+    </window>
+    <window class='worksheet' name='KPI-bad-review'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{26CA079A-7A76-4B78-AA5E-EDAA3C037F41}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Main-DB'>
+      <viewpoints>
+        <viewpoint name='Arr'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='KPI-avg-reviews'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI-bad-review'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI-late-rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI-order'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI-revenue'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='29' />
+      <simple-id uuid='{E527F915-DA14-4C1E-8559-0E6DDBAE9527}' />
+    </window>
+  </windows>
+</workbook>
