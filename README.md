@@ -6,6 +6,8 @@ Analysis of about 96,000 orders from Olist, a Brazilian e-commerce marketplace. 
 
 [View the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/chhunheang.chhorn/viz/Olist-Review-Tableau/Main-DB)
 
+![Dashboard](images/Tableau_Dashboard.png)
+
 ## Key findings
 
 1. Late orders get bad reviews 7 times more often. 62.4% of late orders get a 1-2 star review vs 9.2% of on-time orders, and the average score drops from 4.29 to 2.27. The difference is statistically significant (z = 122.8, p < 0.001).
